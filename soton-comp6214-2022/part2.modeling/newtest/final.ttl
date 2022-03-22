@@ -1,0 +1,300 @@
+@prefix : <http://industryInCovid.psi.enakting.org/data/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix industry: <http://enakting.org/schema/industryInCovid/> .
+@prefix Business: <http://enakting.org/schema/BusinessInCovid/> .
+@prefix value: <http://www.example.org/value>
+@prefix dimension1: <http://www.example.org/dimension1>
+@prefix dimension2: <http://www.example.org/dimension2>
+
+
+:ds1_2_1 rdf:type qb:Item; 
+	 rdf:value 15; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :MiningAndQuarrying .  
+ 
+:ds1_2_2 rdf:type qb:Item; 
+	 rdf:value 13; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :MiningAndQuarrying .  
+ 
+:ds1_2_3 rdf:type qb:Item; 
+	 rdf:value 28; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :MiningAndQuarrying .  
+ 
+
+:ds1_3_1 rdf:type qb:Item; 
+	 rdf:value 1785; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :Manufacturing .  
+ 
+:ds1_3_2 rdf:type qb:Item; 
+	 rdf:value 1370; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :Manufacturing .  
+ 
+:ds1_3_3 rdf:type qb:Item; 
+	 rdf:value 3155; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :Manufacturing .  
+ 
+
+:ds1_4_1 rdf:type qb:Item; 
+	 rdf:value 130; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :dataOfWaterSupply .  
+ 
+:ds1_4_2 rdf:type qb:Item; 
+	 rdf:value 71; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :dataOfWaterSupply .  
+ 
+:ds1_4_3 rdf:type qb:Item; 
+	 rdf:value 201; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :dataOfWaterSupply .  
+ 
+
+:ds1_5_1 rdf:type qb:Item; 
+	 rdf:value 722; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :Construction .  
+ 
+:ds1_5_2 rdf:type qb:Item; 
+	 rdf:value 312; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :Construction .  
+ 
+:ds1_5_3 rdf:type qb:Item; 
+	 rdf:value 1034; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :Construction .  
+ 
+:ds1_6_1 rdf:type qb:Item; 
+	 rdf:value 1819; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles .  
+ 
+:ds1_6_2 rdf:type qb:Item; 
+	 rdf:value 1180; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles .  
+ 
+:ds1_6_3 rdf:type qb:Item; 
+	 rdf:value 2999; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :WholesaleAndRetailTradeRepairOfMotorVehiclesAndMotorcycles .  
+ 
+
+:ds1_7_1 rdf:type qb:Item; 
+	 rdf:value 975; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :AccommodationAndFoodServiceActivities .  
+ 
+:ds1_7_2 rdf:type qb:Item; 
+	 rdf:value 659; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :AccommodationAndFoodServiceActivities .  
+ 
+:ds1_7_3 rdf:type qb:Item; 
+	 rdf:value 1634; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :AccommodationAndFoodServiceActivities .  
+ 
+
+:ds1_8_1 rdf:type qb:Item; 
+	 rdf:value 528; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :TransportationAndStorage .  
+ 
+:ds1_8_2 rdf:type qb:Item; 
+	 rdf:value 335; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :TransportationAndStorage .  
+ 
+:ds1_8_3 rdf:type qb:Item; 
+	 rdf:value 863; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :TransportationAndStorage .  
+ 
+
+:ds1_9_1 rdf:type qb:Item; 
+	 rdf:value 794; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :InformationAndCommunication .  
+ 
+:ds1_9_2 rdf:type qb:Item; 
+	 rdf:value 422; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :InformationAndCommunication .  
+ 
+:ds1_9_3 rdf:type qb:Item; 
+	 rdf:value 1216; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :InformationAndCommunication .  
+ 
+
+:ds1_10_1 rdf:type qb:Item; 
+	 rdf:value 112; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :RealEstateActivities .  
+ 
+:ds1_10_2 rdf:type qb:Item; 
+	 rdf:value 88; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :RealEstateActivities .  
+ 
+:ds1_10_3 rdf:type qb:Item; 
+	 rdf:value 200; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :RealEstateActivities .  
+ 
+
+:ds1_11_1 rdf:type qb:Item; 
+	 rdf:value 1303; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :dataOfProfessional .  
+ 
+:ds1_11_2 rdf:type qb:Item; 
+	 rdf:value 720; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :dataOfProfessional .  
+ 
+:ds1_11_3 rdf:type qb:Item; 
+	 rdf:value 2023; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :dataOfProfessional .  
+ 
+
+:ds1_12_1 rdf:type qb:Item; 
+	 rdf:value 1287; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :AdministrativeAndSupportServiceActivities .  
+ 
+:ds1_12_2 rdf:type qb:Item; 
+	 rdf:value 1072; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :AdministrativeAndSupportServiceActivities .  
+ 
+:ds1_12_3 rdf:type qb:Item; 
+	 rdf:value 2359; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :AdministrativeAndSupportServiceActivities .  
+ 
+
+:ds1_13_1 rdf:type qb:Item; 
+	 rdf:value 303; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :Education .  
+ 
+:ds1_13_2 rdf:type qb:Item; 
+	 rdf:value 457; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :Education .  
+ 
+:ds1_13_3 rdf:type qb:Item; 
+	 rdf:value 760; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :Education .  
+ 
+
+:ds1_14_1 rdf:type qb:Item; 
+	 rdf:value 145; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :HumanHealthAndSocialWorkActivities .  
+ 
+:ds1_14_2 rdf:type qb:Item; 
+	 rdf:value 149; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :HumanHealthAndSocialWorkActivities .  
+ 
+:ds1_14_3 rdf:type qb:Item; 
+	 rdf:value 294; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :HumanHealthAndSocialWorkActivities .  
+ 
+
+:ds1_15_1 rdf:type qb:Item; 
+	 rdf:value 415; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :dataOfArts .  
+ 
+:ds1_15_2 rdf:type qb:Item; 
+	 rdf:value 303; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :dataOfArts .  
+ 
+:ds1_15_3 rdf:type qb:Item; 
+	 rdf:value 718; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :dataOfArts .  
+ 
+
+:ds1_16_1 rdf:type qb:Item; 
+	 rdf:value 108; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeLessThan250; 
+	 qb:dimension2 :OtherServiceActivities .  
+ 
+:ds1_16_2 rdf:type qb:Item; 
+	 rdf:value 29; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :SizeMoreThan250; 
+	 qb:dimension2 :OtherServiceActivities .  
+ 
+:ds1_16_3 rdf:type qb:Item; 
+	 rdf:value 137; 
+	 qb:dataset :ds1; 
+	 qb:dimension1 :Total; 
+	 qb:dimension2 :OtherServiceActivities .  
+ 
+
+
+ 
